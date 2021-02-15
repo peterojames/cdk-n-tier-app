@@ -1,0 +1,810 @@
+{
+  "version": "6.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkVpcBaselineStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkVpcBaselineStack.template.json"
+      },
+      "metadata": {
+        "/CdkVpcBaselineStack/baseline-vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpc4CFAE8D2",
+            "trace": [
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1199:21)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1Subnet4BDD184E",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1533:20)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1RouteTable702A015A",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1551:19)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1RouteTableAssociationEE773041",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:5)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1DefaultRoute9238D588",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:19)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1247:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1246:46)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1EIPD9242B12",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1760:21)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet1NATGateway3B839F59",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1758:17)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2SubnetFFD13595",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1533:20)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2RouteTableF79B722B",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1551:19)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2RouteTableAssociationCB62635C",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:5)",
+              "new PublicSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1748:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1379:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2DefaultRoute31123663",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:19)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1247:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1246:46)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2EIP20A1933F",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1760:21)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPublicSubnet2NATGateway96E3EC74",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1758:17)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:173:27)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet1Subnet850D62F1",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1533:20)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet1RouteTable6A8EBBCB",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1551:19)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet1RouteTableAssociation4406B5E5",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:5)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet1DefaultRoute3C63AE43",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1619:19)",
+              "NatGatewayProvider.configureSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:186:12)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:179:12)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet2SubnetBE3D92FB",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1533:20)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet2RouteTable99EFD0F0",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1551:19)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet2RouteTableAssociationB2C50A93",
+            "trace": [
+              "new Subnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1557:5)",
+              "new PrivateSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1786:5)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1384:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1361:28)",
+              "Vpc.createSubnets (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1356:12)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1228:10)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcPrivateSubnet2DefaultRouteA17AB0CD",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1619:19)",
+              "NatGatewayProvider.configureSubnet (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:186:12)",
+              "NatGatewayProvider.configureNat (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:179:12)",
+              "Vpc.createNatGateways (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1331:14)",
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1253:14)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcIGW3F36ED02",
+            "trace": [
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1235:19)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/baseline-vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "baselinevpcVPCGW10827730",
+            "trace": [
+              "new Vpc (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1241:19)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:12:17)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/ingress-sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ingresssg484DB773",
+            "trace": [
+              "new SecurityGroup (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:395:26)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:16:31)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/egress-sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "egresssg11FEF412",
+            "trace": [
+              "new SecurityGroup (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:395:26)",
+              "new CdkVpcBaselineStack (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/lib/cdk-vpc-baseline-stack.ts:24:32)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/bin/cdk-vpc-baseline.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/stage.ts:174:23)",
+              "process.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:418:26)",
+              "process.emit (events.js:311:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/CdkVpcBaselineStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/stage.ts:174:23)",
+              "process.<anonymous> (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:418:26)",
+              "process.emit (events.js:311:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (/Users/peter/dev/web/projects/aws-projects/cdk-vpc-baseline/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
